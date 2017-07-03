@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/sellerImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/sellerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="Магазин"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/itemCount"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        tools:text="37"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/circle2"/>
+
+</LinearLayout>

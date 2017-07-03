@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.synerit.freshboxclient.app.activity.LoginActivity"
+    android:background="@color/colorPrimary">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="240dp"
+        android:gravity="center"
+        android:text="FreshBox"
+        android:textColor="#ffffff"
+        android:textSize="36sp"
+        android:textStyle="normal"/>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView"-->
+    <!--android:layout_width="140dp"-->
+    <!--android:layout_height="140dp"-->
+    <!--android:layout_gravity="top|center_horizontal"-->
+    <!--android:layout_marginTop="80dp"-->
+    <!--android:src="@drawable/logo" />-->
+
+
+    <TextView
+        android:id="@+id/confidence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="Авторизируясь, Вы соглашаетесь с  Условиями \пользования и Политикой конфиденциальности"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:layout_margin="40dp"/>
+
+    <TextView
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/login_btn"
+        android:drawableLeft="@drawable/ic_google"
+        android:drawablePadding="-30dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Войти"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</FrameLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.synerit.freshboxclient.app.activity.CategoryActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+        <FrameLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:id="@+id/cartBtn"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:scaleType="fitEnd"
+                android:src="@drawable/ic_cart"
+                android:layout_gravity="center"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/itemIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/circle"
+                tools:text="1"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"/>
+
+        </FrameLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:padding="10dp"/>
+
+
+</LinearLayout>
